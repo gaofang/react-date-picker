@@ -11,10 +11,10 @@ import './common.css';
 
 const routes = {
     path: '/',
-    indexRoute: { onEnter: (nextState, replace) => replace('index') },
+    indexRoute: { onEnter: (nextState, replace) => replace('react-date-picker') },
     childRoutes: [
         {
-            path: 'index',
+            path: 'react-date-picker',
             getComponents(nextState, callback) {
                 require.ensure([], require => {
                     callback(null, require('./components/Home/Home').default);

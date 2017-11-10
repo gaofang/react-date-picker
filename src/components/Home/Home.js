@@ -163,6 +163,8 @@ class Home extends React.Component {
           onConfirm={value => {
             this.birthday = value.pass;
             this.setState({dateShow: value.show, panelOpen: false});
+            console.log(`value.show: ${value.show}`);
+            console.log(`value.pass: ${value.pass}`);
           }}
           minYear={parseInt(new Date().getFullYear(), 10) - 100}
           maxYear={parseInt(new Date().getFullYear(), 10)}

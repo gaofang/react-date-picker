@@ -28,9 +28,9 @@ class DatePanel extends React.Component {
     }
     let defD = this.dayItems[this.defValue[2]];
     this.type = 3;
-    if (this.props.type === '年') {
+    if (this.props.type === 'year') {
       this.type = 1;
-    } else if (this.props.type === '年月') {
+    } else if (this.props.type === 'year&month') {
       this.type = 2;
     }
     if (this.type === 1) {
@@ -274,7 +274,7 @@ DatePanel.propTypes = {
   label: React.PropTypes.string.isRequired,
   minYear: React.PropTypes.number,
   maxYear: React.PropTypes.number,
-  defaultIndex: React.PropTypes.number,
+  defaultIndex: React.PropTypes.array,
   onConfirm: React.PropTypes.func.isRequired,
   type: React.PropTypes.string
 };
