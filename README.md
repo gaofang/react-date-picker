@@ -1,5 +1,6 @@
 # react-date-picker
 react日期选择器
+it works better on mobile terminal
 ## Properties
 | Name        | Type           | Default  | Description |
 | ------------- |:-------------| :-----|:------|
